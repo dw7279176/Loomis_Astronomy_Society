@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>LoomisAstronomySociety</title>
-<!----<meta name="viewport" content="width=device-width, initial-scale=1.0">*/--->
-<style>
-   /*.headRectangle{
+    <title>LoomisAstronomySociety</title>
+    <!----<meta name="viewport" content="width=device-width, initial-scale=1.0">*/--->
+    <style>
+        /*.headRectangle{
     position: absolute;
     height: 10vw;
     width: 100vw;
@@ -13,94 +14,389 @@
     top: 0vw;
    }
     */
+        html, body {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
 
-   #loomis{
-    z-index: 2;
-    position: absolute;
-    left: 65vw;
-    top: 0vw;
-    font-size: 3vw;
-    white-space: nowrap;
-    color: rgb(0, 255, 234);
-   }
+        }
 
-   #cosmos{
-    position: absolute;
-    left: 0vw;
-    top: 0vw;
-    height: 20vw;
-    width: 100vw;
-    object-fit: cover;
-   }
+        #loomis {
+            z-index: 2;
+            position: absolute;
+            left: 63vw;
+            top: 0vw;
+            font-size: 3vw;
+            white-space: nowrap;
+            color: rgb(0, 255, 234);
+        }
 
-   #founding{
-    position: absolute; 
-    z-index: 2;
-    left: 65vw;
-    top: 10vw;
-    font-size: 1.5 vw;
-    color: white;
-   }
+        #cosmos {
+            position: absolute;
+            left: 0vw;
+            top: 0vw;
+            height: 20vw;
+            width: 100vw;
+            object-fit: cover;
+        }
 
-   .Menu{
-    z-index: 2;
-    color: white;
-    position: absolute;
-    font-size: 3vw;
-   }
+        #founding {
+            position: absolute;
+            z-index: 2;
+            left: 63vw;
+            top: 8vw;
+            font-size: 1.2vw;
+            color: white;
+        }
 
-   #About{
-    position: absolute;
-    left: 5vw;
-    top: -1vw;
-   }
+        #quote {
+            position: absolute;
+            z-index: 2;
+            left: 63vw;
+            top: 12vw;
+            color: rgb(91, 168, 230);
 
-   #About:hover{
-    border-bottom: 0.5vw solid rgb(111, 0, 255); 
+        }
 
-   }
+        .Menu {
+            z-index: 2;
+            color: white;
+            position: absolute;
+            font-size: 3vw;
+        }
 
-   #Schedule:hover{
-    border-bottom: 0.5vw solid rgb(111, 0, 255);
-   }
+        #About {
+            position: absolute;
+            left: 5vw;
+            top: -1vw;
+        }
 
-   #Schedule{
-    position: absolute; 
-    left: 19vw;
-    top: -1vw;
-   }
+        #About:hover {
+            border-bottom: 0.5vw solid rgb(111, 0, 255);
 
-   #Events{
-    position: absolute;
-    left: 38vw;
-    top: -1vw;
-   }
+        }
 
-   
-   #Events:hover{
-    border-bottom: 0.5vw solid rgb(111, 0, 255);
-   }
+        #Schedule:hover {
+            border-bottom: 0.5vw solid rgb(111, 0, 255);
+        }
+
+        #Schedule {
+            position: absolute;
+            left: 19vw;
+            top: -1vw;
+        }
+
+        #Events {
+            position: absolute;
+            left: 38vw;
+            top: -1vw;
+        }
 
 
-   
+        #Events:hover {
+            border-bottom: 0.5vw solid rgb(111, 0, 255);
+        }
 
+        body {
+            background-color: black;
+        }
 
+        p {
+            color: white;
+        }
 
-</style>
+        h1 {
+            color: white;
+        }
+
+        .About {
+            position: absolute;
+            left: 5vw;
+            top: 20vw;
+            width: 90vw;
+        }
+
+        #History {
+            position: absolute;
+            left: 0vw;
+            top: 3vw;
+            font-size: 2.5vw;
+            color: lightskyblue;
+
+        }
+
+        #history_text {
+            position: absolute;
+            color: white;
+            left: 0vw;
+            top: 10vw;
+            font-size: 1.5vw;
+        }
+
+        .photos_of_founders {
+            position: absolute;
+            top: 17vw;
+            height: 100vw;
+            width: 100vw;
+        }
+
+        #ignacio_labeling {}
+
+        .photos_of_founders img {
+            height: 15vw;
+            margin-right: 5vw;
+        }
+
+        .photos_of_founders p {
+            position: absolute;
+            font-size: 1.25vw;
+            top: 16vw;
+            width: 12vw;
+            color: white;
+        }
+
+        #ignacio_labeling {
+            left: 0vw;
+        }
+
+        #lillian_labeling {
+            left: 17.5vw;
+        }
+
+        #maya_labeling {
+            left: 33vw;
+        }
+
+        #wen_labeling {
+            left: 50vw;
+        }
+
+        .past_summary {
+            position: absolute;
+            top: 40vw;
+            left: 0vw;
+        }
+
+        .past_summary p {
+            font-size: 1.50vw;
+            line-height: 1.5;
+        }
+
+        .past_images {
+            position: absolute;
+            top: 60vw;
+            width: 100vw;
+        }
+
+        .past_images img {
+            height: 20vw;
+            margin-right: 5vw;
+            max-width: 30vw;
+            object-fit: cover;
+        }
+
+        .past_images p {
+            font-size: 1.5vw;
+            position: absolute;
+        }
+
+        #placeholder1_label {
+            left: 8vw;
+        }
+
+        #placeholder2_label {
+            left: 38vw;
+        }
+
+        #placeholder3_label {
+            left: 68vw;
+        }
+
+        #more_info {
+            color: rgb(3, 238, 255);
+            top: 25vw;
+        }
+
+        .Meeting_info {
+            position: absolute;
+            left: 5vw;
+            width: 95vw;
+            top: 110vw;
+        }
+
+        #meeting {
+            font-size: 2.5vw;
+            color: lightskyblue;
+
+        }
+
+        #date1 {
+            font-size: 1.75vw;
+            top: 115vw;
+        }
+
+        a {
+            font-size: 1.5vw;
+        }
+
+        .Events {
+            position: absolute;
+            left: 5vw;
+            width: 95vw;
+            top: 128vw;
+        }
+
+        #event_text {
+            font-size: 2.5vw;
+            color: lightskyblue;
+        }
+
+        .event_pictures img {
+            width: 60vw;
+            left: 0vw;
+            height: 30vw;
+            object-fit: cover;
+            margin-bottom: 15vw;
+            border: 2px solid rgb(154, 30, 30);
+        }
+
+        .event_pictures p {
+            top: 10vw;
+            position: absolute;
+            font-size: 1.5vw;
+            left: 10vw;
+        }
+
+        .actual_images {
+            position: absolute;
+            top: 15vw;
+        }
+
+        #draconidtext{
+            top: 10vw;
+            left: 0vw;
+        }
+
+        #geminishowertext {
+            top: 100vw;
+            left: 0vw;
+        }
+
+        #balloonlaunch{
+            top: 55vw;
+        }
+
+        #artemistext {
+            top: 145vw;
+            left: 0vw;
+        }
+
+        #version{
+            position: absolute;
+            top: 15vw;
+            z-index: 2;
+            left: 5vw;
+            font-size: 1.25vw;
+        }
+
+        #feedback_link{
+            position: absolute;
+            top: 16.1vw;
+            z-index: 2;
+            left: 30vw;
+            font-size: 1.25vw;
+            color: lightblue;
+        }
+        
+    </style>
+
 </head>
+
+<script>
+    function smoothScrollTo(id) {
+        document.getElementById(id).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+        })
+    }
+
+</script>
+
 <body>
-    <div class = "head">
-        <img id = "cosmos" src = "Images/dark_cosmos.webp"></img>
-        <p id = "loomis">Loomis Astronomy Society</p>
-        <p id = "founding">Astronomy Club founded at Western Reserve Academy since 2024.</p>
-        <div class = "Menu">
-            <p id = "About">About</p> 
-            <p id = "Schedule"> Meetings </p>
-            <p id = "Events"> Events </p>
+    <div class="head">
+        <img id="cosmos" src="Images/dark_cosmos.webp"></img>
+        <p id="loomis">Loomis Astronomy Society</p>
+        <p id="founding">Astronomy Club founded at Western Reserve Academy since 2024.</p>
+        <p id="quote">"Shoot for the moon. Even if you miss, you'll land among the stars." <br>
+            ― Norman Vincent Peale</p>
+        <p id="version">Website Development in Progress - Beta 1.0.0</p>
+        <a id="feedback_link" target="blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSerY4DQs6E5A3EfRV8U1ZQ7eqi9GbqN1BwQYdiLXPSHCWTxjg/viewform?usp=dialog"> Google Forms Link -- Feedback Appreciated!</a>
+        <div class="Menu">
+            <p id="About" onclick="smoothScrollTo('History')">About</p>
+            <p id="Schedule" onclick="smoothScrollTo('meeting')">Meetings</p>
+            <p id="Events" onclick="smoothScrollTo('event_text')">Events</p>
         </div>
     </div>
 
+    <div class="About">
+        <p id="History"> History</p>
+        <p id="history_text"> Loomis Astronomy Society is Western Reserve Academy's premier astronomy club,
+            founded in September 2023 by a group of passionate high school students and club advisor, Mr. Ignacio De
+            Echeverria.
+        </p>
+        <div class="photos_of_founders">
+            <img id="ignacio" src="Images/ignacio.jpg"></img>
+            <p id="ignacio_labeling"> Ignacio De Echevarria, Faculty Club Advisor 2023 - present </p>
+            <img id="lillian" src="Images/lillian.jpg"></img>
+            <p id="lillian_labeling"> Lillian Kercher, Student Club Leader 2023 - present </p>
+            <img id="maya" src="Images/mayakinney.jpg"></img>
+            <p id="maya_labeling"> Maya Kinney, Student Club Leader 2023 - present </p>
+            <img id="wen" src="Images/wenxiao.jpg"></img>
+            <p id="wen_labeling">Wen Xiao, Interim Club Leader</p>
+        </div>
+        <div class="past_summary">
+            <p id="other_students"> And many other students passionate about Astronomy. <br> <br>
+                Together, <br> we discuss Astronomy with rapture. <br> We gaze at the stars with wonder. <br> We embark
+                on exciting endeavors where we explore the cosmos with our own eyes.</p>
+        </div>
+
+        <div class="past_images">
+            <img id="placeholder1" src="Images/placeholder_1.jpg"></img>
+            <img id="placeholder2" src="Images/placeholder_2.jpg"></img>
+            <img id="placeholder3" src="Images/placeholder_3.jpg"></img>
+            <p id="placeholder1_label">Placeholder label text_1</p>
+            <p id="placeholder2_label">Placeholder label text_2</p>
+            <p id="placeholder3_label">Placeholder label text_3</p>
+            <p id="more_info">For more information, visit the Accomplishments Section of the website.</p>
+        </div>
+    </div>
+    <div class="Meeting_info">
+        <p id="meeting">Upcoming Meetings:</p>
+        <p id="date1"> August 37, 2034 8:30 P.M. : </p>
+        <a id="linkdate1" href="https://docs.google.com/document/d/1hB-TBxUNsxbABSSB66OkvefDM99xtqbrCrXwEt2gm7E">
+            Meeting Link</a>
+    
+    
+        </div>
+
+    <div class="Events">
+        <p id="event_text">Events:</p>
+        <div class="event_pictures">
+            <div class="actual_images">
+                <img id="draconid" src="Images/draconid.jpg"></img>
+                <img id="balloon" src="Images/ballon_launch.jpg"></img>
+                <img id="geminidshower" src="Images/geminid_meteor.avif"></img>
+                <img id="artemis2" src="Images/artemis.jpg"></img>
+            </div>
+            <p id="draconidtext">The Draconid Meteor Shower will peak on the night of October 8th, 2025. Come to [Location] to view the meteor shower as a group!</p>
+            <p id="balloonlaunch">Weather Balloon Launch &nbsp&nbsp&nbsp&nbsp Date: February 30, 2091 8:00 A.M.</p>
+            <p id="geminishowertext">The Geminid meteor shower peaks on the night of December 13 and December 14. We
+                will watch the shower at Dec 13, 9:00 P.M.</p>
+            <p id="artemistext">The Artemis II will launch sometime in April of 2026. &nbsp&nbsp&nbsp&nbsp Observation
+                Date: TBD</p>
+        </div>
+
+
 </body>
+
 </html>
-
-
